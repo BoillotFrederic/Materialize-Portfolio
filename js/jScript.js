@@ -28,8 +28,8 @@ $( document ).ready
     var colorBgClass = colorCookie ? colorCookie + ' darken-4' : 'blue darken-4';
     var colorTextClass = colorCookie ? colorCookie + '-text' : 'blue-text';
 
-    $('.blue-text').removeClass('.blue-text').addClass(colorTextClass);
-    $('.blue').not('#setColor span').removeClass('.blue').addClass(colorCookie);
+    $('.blue-text').removeClass('blue-text').addClass(colorTextClass);
+    $('.blue').not('#setColor span').removeClass('blue').addClass(colorCookie);
 
     // Couleur sélectionnée
     $("#setColor span").removeAttr('id');
@@ -95,14 +95,14 @@ $( document ).ready
           // Lettre suivante
           if (iText < text.length)
           {
-            setTimeout(shuffle, 120, This);
+            setTimeout(shuffle, $(This).attr('data-speed'), This);
             $(This).html(textFinalLoop + arrShuffe.join(''));
             iText++;
           }
           else $(This).html(textFinalLoop);
         };
 
-        setTimeout(shuffle, 120, This);
+        setTimeout(shuffle, $(This).attr('data-speed'), This);
       };
 
       setTimeout(shuffleDelay, $(this).attr('data-delay'), this);

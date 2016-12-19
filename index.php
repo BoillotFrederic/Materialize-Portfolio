@@ -39,10 +39,10 @@
     </ul>
     <div class="row blue darken-4 valign-wrapper" id="home">
       <div class="col s12 m12 l12 center">
-        <div class="suffleLetters" data-delay="0">
+        <div class="suffleLetters" data-delay="0" data-speed="120">
           Bienvenue sur mon portfolio !
         </div>
-        <div class="suffleLetters blue-text text-lighten-3" data-delay="4000">
+        <div class="suffleLetters blue-text text-lighten-3" data-delay="4000" data-speed="50">
           Bonne visite !
         </div>
       </div>
